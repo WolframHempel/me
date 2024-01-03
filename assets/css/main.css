@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: Lato, sans-serif;
+    color: #32618b;
+}
+
+body {
+    background: #fefaee;
+}
+
+a {
+    cursor: pointer;
+}
+
+.wrapper {
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    width: 90%;
+    max-width: 800px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+header img {
+    width: 240px;
+}
+
+header h1 {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    margin-top: 20px;
+    line-height: 40px;
+    font-size: 32px;
+}
+
+header .divider {
+    width: 100px;
+    margin: 20px auto;
+    height: 1px;
+    background: #83add3;
+}
+
+header p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #cc521d;
+    font-style: italic;
+}
+
+/*******************
+ * INTRO
+ *******************/
+.intro {
+    display: flex;
+    flex-direction: row;
+    margin: 80px 0 60px;
+}
+
+.intro p {
+    text-align: left;
+    margin-left: 50px;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+.intro img {
+    width: 150px;
+    height: 150px;
+    border: 10px solid #FFF;
+    box-shadow: 3px 3px 7px 0 #00000066;
+    transform: rotate(-2deg);
+}
+
+@media screen and (max-width: 700px) {
+    .intro {
+        flex-direction: column;
+    }
+
+    .intro p {
+        margin: 0;
+    }
+
+    .intro img {
+        margin: 0 auto 30px;
+        width: 250px;
+        height: 250px;
+
+    }
+}
+
+/*******************
+ * NAV
+ *******************/
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .seperator {
+    width: 3px;
+    height: 3px;
+    margin: 0 12px;
+    background-color: #f0af92;
+}
+
+nav a {
+    color: #cc521d;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 700px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav .seperator {
+        display: none;
+    }
+}
+
+/*******************
+ * SECTION
+ *******************/
+section {
+    padding: 30px 0 80px;
+}
+
+section h2 {
+    text-align: center;
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+section ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section ul li {
+    width: 250px;
+    background: #FFF;
+    box-shadow: 0 1px 3px 0 #00000033;
+}
+
+section ul li a {
+    display: block;
+}
+
+
+section ul li iframe,
+section ul li img {
+    background: #000;
+}
+
+section ul li .content {
+    padding: 20px;
+}
+
+section ul li h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+section ul li h3 small {
+    font-size: inherit;
+    font-weight: inherit;
+    opacity: 0.7;
+}
+
+section ul li p {
+    margin-bottom: 10px;
+    line-height: 22px;
+    display: block;
+}
+
+@media screen and (max-width: 700px) {
+    section {
+        padding: 20px 0 40px;
+    }
+
+    section ul {
+        flex-direction: column;
+    }
+
+    section ul li {
+        margin: 0 auto 50px;
+    }
+}
+
+/*******************
+ * FOOTER
+ *******************/
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 60px;
+}
+
+footer .divider,
+section .divider {
+    width: 100px;
+    margin: 20px auto;
+    height: 1px;
+    background: #83add3;
+}
+
+section .divider {
+    margin-bottom: 40px;
+}
+
+footer .subscribe-links {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+footer .subscribe-links a {
+    text-align: left;
+    flex: 1;
+    margin: 10px 0;
+}
+
+footer a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #fefaee;
+    transition: all 300ms ease-out;
+    justify-content: center;
+}
+
+footer a:hover {
+    border-color: #cedfee;
+}
+
+footer a svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    fill: #32618b;
+}
+
+footer a.twitter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+footer .copy {
+    margin: 50px 0;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 700px) {
+    footer .subscribe-links {
+        flex-direction: column;
+    }
+
+    footer .subscribe-links a {
+        margin: 0 auto 10px;
+    }
+}
